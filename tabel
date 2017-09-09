@@ -1,0 +1,22 @@
+tabel
+1.anggota
+2.angsuran
+3.petugas
+4.pinjaman : 
+	-id pinjaman
+	-jumlah pinjaman(ditentukan)
+5.simpanan :
+	-id simpanan
+	-id anggota
+	-tanggal
+	-jumlah
+	-keterangan
+6.transaksi
+	-id transaksi
+	-tanggal
+	-id anggota
+	-id pinjaman
+	-id angsuran
+	-jumlah anggsuram
+	-sisa
+	-keterangan
