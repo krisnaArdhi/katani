@@ -3,7 +3,8 @@ class upt_pertanian extends CI_Controller {
 	 function __construct(){
   parent::__construct();
 
-  $this->load->model('M_upt');
+  $this->load->model('M_upt','M_login');
+
   $this->load->helper('html','form_helper');
   $this->load->library('table','pagination');
  // $this->auth->restrict();
@@ -12,6 +13,15 @@ class upt_pertanian extends CI_Controller {
  }
 	public function index ()
 	{
+		if ($this->session->userdata('akses') == 'admin')
+		 {
+			 	$this->load->view('upt/daftar_mantri_tani');
+					 //$this->load->view("akses_gagal");
+				 }
+				 else {
+					 echo "anda tidak memiliki hak untuk ini";
+
+				 }
 		$this->load->view('upt/daftar_mantri_tani');
 	}
 	public function data_mantri ()
@@ -45,6 +55,11 @@ class upt_pertanian extends CI_Controller {
 	public function daftar_kelompok()
 	{
 		$this->load->view('kelompok_tani/daftar_kelompok_tani');
+	}
+
+	public function daftar_distributor()
+	{
+		$this->load->view('upt/input_distributor');
 	}
 
 	public function daftar_ppl()

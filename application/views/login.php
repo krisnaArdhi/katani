@@ -10,7 +10,7 @@
 
     <title>Login Page 2 | Creative - Bootstrap 3 Responsive Admin Template</title>
 
-    <!-- Bootstrap CSS -->    
+    <!-- Bootstrap CSS -->
     <link href="<?php echo base_url(); ?>bahan/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
     <link href="<?php echo base_url(); ?>bahan/css/bootstrap-theme.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 
     <div class="container">
 
-      <form class="login-form"  method="post" action="<?php echo base_url();?>login/login">        
+      <form class="login-form"  method="post" action="<?php echo base_url();?>login/coba">        
         <div class="login-wrap">
             <p class="login-img"><i class="icon_lock_alt"></i></p>
             <div class="input-group">
@@ -44,7 +44,7 @@
                 <span class="input-group-addon"><i class="icon_key_alt"></i></span>
                 <input type="password" name="password" class="form-control" placeholder="Password">
             </div>
-            
+
             <label class="checkbox">
                 <input type="checkbox" value="remember-me"> Remember me
                 <span class="pull-right"> <a href="#"> Forgot Password?</a></span>

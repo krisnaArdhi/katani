@@ -1,50 +1,56 @@
 <?php
- 
+
 class login extends CI_Controller
 {
- 
+
     function __construct()
     {
         parent::__construct();
         $this->load->helper(array('form', 'url'));
         $this->load->model('m_login');
     }
-
     function index()
     {
-          
-        $form_data = $this->input->post('data');
-        if (!empty($form_data))
+          $this->load->view('login');
+    }
+
+    function coba()
+    {
+
+
+        if (!empty($_POST))
         {
-            if ($this->m_login->login($form_data['username'], $form_data['password']))
+          $username = $_POST['username'];
+          $password = $_POST['password'];
+            if ($this->m_login->login($username, $Password))
             {
-                if ($this->session->userdata('jenis') == 'distributor') {
+                if ($this->session->userdata('akses') == 'distributor') {
                     redirect('distributor');
                 }
-                elseif($this->session->userdata('jenis') == 'petani') {
-                    redirect('petani');
+                elseif($this->session->userdata('akses') == 'admin') {
+                    redirect('admin');
                 }
-                elseif($this->session->userdata('jenis') == 'desa') {
-                    redirect('desa');
+                elseif($this->session->userdata('akses') == 'ketua') {
+                    redirect('ketua');
                 }
                 else{
                     redirect('login/login');
                 }
-                
+
             }
             else
             {
                 redirect('login/login');
             }
         }
-        $this->load->view('login');
-    
+
+
     }
 
 
- 
-   
- 
+
+
+
     function logout()
     {
         $this->m_login->logout();
@@ -53,18 +59,18 @@ class login extends CI_Controller
   //pembagian
     function admin()
     {
-        if ($this->session->userdata('logged_in')) 
+        if ($this->session->userdata('logged_in'))
         {
             if ($this->session->userdata('group') == 'admin')
             {
-                
+
                 $this->load->view('homepetugas');
             }
             else
             {
                 redirect('login/login');
             }
-            
+
         }
 
         else
@@ -75,7 +81,7 @@ class login extends CI_Controller
 
     function anggota()
     {
-        if ($this->session->userdata('logged_in')) 
+        if ($this->session->userdata('logged_in'))
         {
             if ($this->session->userdata('group') == 'anggota')
             {
@@ -85,7 +91,7 @@ class login extends CI_Controller
             {
                 redirect('login/login');
             }
-            
+
         }
 
         else
@@ -94,5 +100,5 @@ class login extends CI_Controller
         }
     }
 
- 
+
 }

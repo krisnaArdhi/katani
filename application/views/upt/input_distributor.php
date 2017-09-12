@@ -1,5 +1,5 @@
 <?php
-    include ('header.php')
+    include ('headerform.php')
 ?>
 
       <!--sidebar start-->
@@ -12,9 +12,9 @@
               <!--overview start-->
               <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header"><i class="fa fa-laptop"></i> RDATA HASIL PERTANIAN</h3>
+                    <h3 class="page-header"><i class="fa fa-laptop"></i> DAFTAR Toko</h3>
                     <ol class="breadcrumb">
-                        <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-home"></i><a href="<?php echo base_url(); ?>upt_pertanian">Home</a></li>
                     </ol>
                 </div>
             </div>
@@ -31,61 +31,33 @@
                 <div class="col-lg-9 col-md-12">
                       <section class="panel">
                           <header class="panel-heading">
-                             INPUT DATA KOMODITAS
+                             DAFTAR
                           </header>
                           <div class="panel-body">
                           <form class="form-horizontal " method="post" action="<?php echo base_url();?>distributor/simpan">
 
 
-                            <div class="form-group">
-                               <label class="col-sm-2 control-label">NIK</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama" class="form-control">
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">NAMA</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="alamat" class="form-control" disabled>
-                             </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">KELOMPOK TANI</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="alamat" class="form-control" disabled>
-                             </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">LUAS LAHAN</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">KOMODITI</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">POLA TANAM</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">POLA PENGAIRAN</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">JUMLAH PANEN</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" >
-                               </div>
-                           </div>
+                                   <div class="form-group">
+                                      <label class="col-sm-2 control-label">Nama Toko</label>
+                                      <div class="col-sm-10">
+                                          <input type="text" name="nama" class="form-control">
+                                      </div>
+                                  </div>
 
+                                  <div class="form-group">
+                                      <label class="col-sm-2 control-label">Alamat</label>
+                                      <div class="col-sm-10">
+                                          <input type="text" name="alamat" class="form-control">
+
+                                    </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label class="col-sm-2 control-label">NO TELP</label>
+                                      <div class="col-sm-10">
+                                          <input type="number" name="alamat_toko" class="form-control">
+                                    </div>
+                                  </div>
 
                                  <div class="form-group">
                                       <div class="col-sm-10">

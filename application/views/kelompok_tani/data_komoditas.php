@@ -1,9 +1,14 @@
+
 <?php
-    include ('header.php')
+    include ('headerfull.php')
 ?>
 
+      <!--header end-->
+<body>
       <!--sidebar start-->
-
+  <?php
+    include ('sidebar.php')
+?>
       <!--sidebar end-->
 
       <!--main content start-->
@@ -12,10 +17,8 @@
               <!--overview start-->
               <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header"><i class="fa fa-laptop"></i> RDATA HASIL PERTANIAN</h3>
-                    <ol class="breadcrumb">
-                        <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-                    </ol>
+                    <h3 class="page-header"><i class="fa fa-laptop"></i> KELOMPOK TANI </h3>
+
                 </div>
             </div>
 
@@ -26,80 +29,60 @@
 
 
 
-            <div class="row">
+              <div class="row">
 
                 <div class="col-lg-9 col-md-12">
                       <section class="panel">
                           <header class="panel-heading">
-                             INPUT DATA KOMODITAS
+                              DATA HASIL PANEN
                           </header>
-                          <div class="panel-body">
-                          <form class="form-horizontal " method="post" action="<?php echo base_url();?>distributor/simpan">
+                          <table class="table table-striped">
+                              <thead>
+                              <tr>
+
+                                  <th>nik</th>
+                                  <th>nama</th>
+                                  <th>komoditas</th>
+                                  <th>luas lahan</th>
+                                  <th>hasil panen (ton)</th>
+                                  <th>tahun</th>
 
 
-                            <div class="form-group">
-                               <label class="col-sm-2 control-label">NIK</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama" class="form-control">
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">NAMA</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="alamat" class="form-control" disabled>
-                             </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">KELOMPOK TANI</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="alamat" class="form-control" disabled>
-                             </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">LUAS LAHAN</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">KOMODITI</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">POLA TANAM</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">POLA PENGAIRAN</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">JUMLAH PANEN</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" >
-                               </div>
-                           </div>
 
+                              </tr>
+                              </thead>
+                              <?php
+    if (empty($query))
+    {
+      echo "<tr><td colspan=\"6\">Data tidak tersedia</td></tr>";
+    }else
+    {
+       foreach ($query as $isi)
+    {
+    ?>
 
-                                 <div class="form-group">
-                                      <div class="col-sm-10">
-                                        <left><input type="submit" name="mysubmit" class="btn btn-danger" >
-                                        </left>
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
+                              <tbody>
+                              <tr>
+                                  <td><?php print $isi->nik?></td>
+                                  <td><?php print $isi->nama?> </td>
+                                  <td><?php print $isi->komoditi?></td>
+                                  <td><?php print $isi->luas_lahan?></td>
+                                  <td><?php print $isi->jumlah_panen?></td>
+                                  <td><?php print $isi->tahun?></td>
+                              </tr>
+
+                              </tbody>
+                                 <?php
+
+ }}
+ ?>
+                          </table>
                       </section>
 
                 </div><!--/col-->
 
               </div>
+
 
 
 
