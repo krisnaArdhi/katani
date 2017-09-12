@@ -1,0 +1,7 @@
+<?php 
+class upt_pertanian extends CI_Controller {
+	public function index()
+	{
+		$this->load->view('upt/mantri_tani');
+	}
+}
