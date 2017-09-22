@@ -3,7 +3,7 @@ class Distributor extends CI_Controller {
 	 function __construct(){
   parent::__construct();
 
-  $this->load->model('M_upt','M_login');
+  $this->load->model('M_distributor','M_login');
 
   $this->load->helper('html','form_helper');
   $this->load->library('table','pagination');
@@ -26,7 +26,7 @@ class Distributor extends CI_Controller {
 	}
 	public function lelang ()
 	{
-		
+
 		$this->load->view('upt/daftar_mantri_tani');
 	}
 

@@ -1,97 +1,97 @@
 <?php
     include ('headerform.php')
-?>     
+?>
 
       <!--sidebar start-->
-    
+
       <!--sidebar end-->
-      
+
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">            
+          <section class="wrapper">
               <!--overview start-->
               <div class="row">
                 <div class="col-lg-12">
                     <h3 class="page-header"><i class="fa fa-laptop"></i> DAFTAR MANTRI TANI</h3>
                     <ol class="breadcrumb">
-                        <li><i class="fa fa-home"></i><a href="<?php echo base_url(); ?>upt_pertanian">Home</a></li>                       
+                        <li><i class="fa fa-home"></i><a href="<?php echo base_url(); ?>upt_pertanian">Home</a></li>
                     </ol>
                 </div>
             </div>
-              
 
-                    
-          
+
+
+
           <!-- Today status end -->
-            
-              
-                
+
+
+
             <div class="row">
-                
-                <div class="col-lg-9 col-md-12">    
+
+                <div class="col-lg-9 col-md-12">
                       <section class="panel">
                           <header class="panel-heading">
                              DAFTAR
                           </header>
                           <div class="panel-body">
-                          <form class="form-horizontal " method="post" action="<?php echo base_url();?>distributor/simpan">
-                                    
+                          <form class="form-horizontal " method="post" action="<?php echo base_url();?>upt_pertanian/simpan_mantri">
+
 
                                    <div class="form-group">
                                       <label class="col-sm-2 control-label">NIK</label>
                                       <div class="col-sm-10">
-                                          <input type="text" name="nama" class="form-control">
+                                          <input type="text" name="nik" class="form-control">
                                       </div>
                                   </div>
                                   <div class="form-group">
                                       <label class="col-sm-2 control-label">NAMA</label>
                                       <div class="col-sm-10">
-                                          <input type="text" name="alamat" class="form-control">
+                                          <input type="text" name="nama" class="form-control">
                                     </div>
                                   </div>
                                   <div class="form-group">
                                       <label class="col-sm-2 control-label">WILAYAH</label>
                                       <?php
                                         $dd_wilayah_attribute = 'class="form-control select2"';
-                                        echo form_dropdown('wilayah', $wilayah, $wilayah_ppl, $dd_wilayah_attribute);
+                                        echo form_dropdown('wil', $wilayah, $wilayah_ppl, $dd_wilayah_attribute);
                                       ?>
-                                  </div>  
-                                   
+                                  </div>
+
                                   <div class="form-group">
                                       <label class="col-sm-2 control-label">NO TELP</label>
                                       <div class="col-sm-10">
                                           <input type="number" name="alamat_toko" class="form-control">
                                     </div>
                                   </div>
-                                
-                                  
+
+
 
                                  <div class="form-group">
                                       <div class="col-sm-10">
                                         <left><input type="submit" name="mysubmit" class="btn btn-danger" >
                                         </left>
                                       </div>
-                                  </div>  
+                                  </div>
                               </form>
                           </div>
                       </section>
 
                 </div><!--/col-->
-                
+
               </div>
 
-                    
-                   
+
+
                 <!-- statics end -->
-              
-            
-                
+
+
+
 
               <!-- project team & activity start -->
           <div class="row">
 
               </div><br><br>
-          </div> 
+          </div>
               <!-- project team & activity end -->
 
           </section>
@@ -124,7 +124,7 @@
     <!-- custom select -->
     <script src="<?php echo base_url(); ?>bahan/js/jquery.customSelect.min.js" ></script>
     <script src="<?php echo base_url(); ?>bahan/assets/chart-master/Chart.js"></script>
-   
+
     <!--custome script for all page-->
     <script src="<?php echo base_url(); ?>bahan/js/scripts.js"></script>
     <!-- custom script for this page-->
@@ -135,9 +135,9 @@
     <script src="<?php echo base_url(); ?>bahan/js/xcharts.min.js"></script>
     <script src="<?php echo base_url(); ?>bahan/js/jquery.autosize.min.js"></script>
     <script src="<?php echo base_url(); ?>bahan/js/jquery.placeholder.min.js"></script>
-    <script src="<?php echo base_url(); ?>bahan/js/gdp-data.js"></script>   
+    <script src="<?php echo base_url(); ?>bahan/js/gdp-data.js"></script>
     <script src="<?php echo base_url(); ?>bahan/js/morris.min.js"></script>
-    <script src="<?php echo base_url(); ?>bahan/js/sparklines.js"></script> 
+    <script src="<?php echo base_url(); ?>bahan/js/sparklines.js"></script>
     <script src="<?php echo base_url(); ?>bahan/js/charts.js"></script>
     <script src="<?php echo base_url(); ?>bahan/js/jquery.slimscroll.min.js"></script>
   <script>
@@ -145,7 +145,7 @@
       //knob
       $(function() {
         $(".knob").knob({
-          'draw' : function () { 
+          'draw' : function () {
             $(this.i).val(this.cv + '%')
           }
         })
@@ -167,7 +167,7 @@
       $(function(){
           $('select.styled').customSelect();
       });
-      
+
       /* ---------- Map ---------- */
     $(function(){
       $('#map').vectorMap({

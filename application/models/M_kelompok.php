@@ -19,6 +19,27 @@ class M_kelompok extends CI_Model
 	return $query->result();
  }
 
+ public function tampil_anggota()
+{
 
+
+  $query = $this->db->get('anggota');
+return $query->result();
+}
+
+ function caridata()
+ {
+
+		$c = $this->input->POST ('cari');
+		$this->db->like('nama', $c);
+		$query = $this->db->get ('simpanan');
+		return $query->result();
+ }
+ public function detailanggota($id)
+ {
+   	$this->db->where('nik',$id);
+  	$query = $this->db->get('anggota');
+    return $query->result();
+ }
 }
 ?>

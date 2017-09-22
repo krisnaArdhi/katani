@@ -33,7 +33,7 @@
 
     <div class="container">
 
-      <form class="login-form"  method="post" action="<?php echo base_url();?>login/coba">        
+      <form class="login-form"  method="post" action="<?php echo base_url();?>login/cek_login">
         <div class="login-wrap">
             <p class="login-img"><i class="icon_lock_alt"></i></p>
             <div class="input-group">
@@ -50,7 +50,7 @@
                 <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
             </label>
             <button class="btn btn-primary btn-lg btn-block" name="login" type="submit">Login</button>
-            <button class="btn btn-info btn-lg btn-block" type="submit">Signup</button>
+            
         </div>
       </form>
 

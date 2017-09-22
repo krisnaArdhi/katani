@@ -3,7 +3,8 @@ class upt_pertanian extends CI_Controller {
 	 function __construct(){
   parent::__construct();
 
-  $this->load->model('M_upt','M_login');
+  $this->load->model('M_login');
+	  $this->load->model('M_upt');
 
   $this->load->helper('html','form_helper');
   $this->load->library('table','pagination');
@@ -97,5 +98,60 @@ class upt_pertanian extends CI_Controller {
 		$data['query'] = $this->M_upt->tampil_wilayah();
 		$this->load->view('upt/data_wilayah',$data);
 	}
+	function simpan_mantri()
+{
+	 if (isset($_POST['mysubmit']))
+	 {
+ $data = array(
+ 'nik'    							 => $this->input->post('nik'),
+ 'nama_mantri'         	 => $this->input->post('nama'),
+ 'id_wilayah'				     => $this->input->post('wil')
+
+ );
+
+
+	$hasil=$this->M_upt->simpan_data_mantri($data);
+	if ($hasil){
+	 echo "<script> alert('data berhasil Disimpan');location='".base_url()."transaksi/tambah_transaksi'</script>";
+	}else{
+	 echo  "<script> alert('data gagal Disimpan');location='".base_url()."transaksi/tambah_transaksi'</script>";
+	}
+	echo "<br/>";
+	echo anchor('simpanan/tampil', 'Kembali');
+ }
+ else{
+	 $this->load->view('tambahtransaksi');
+ }
+
+}
+
+function simpan_ppl()
+{
+ if (isset($_POST['mysubmit']))
+ {
+$data = array(
+'nip'    							 => $this->input->post('nip'),
+'nama_ppl'         	 => $this->input->post('nama'),
+'id_wilayah'				     => $this->input->post('wil'),
+'telp'				     => $this->input->post('telp')
+
+
+);
+
+
+$hasil=$this->M_upt->simpan_data_ppl($data);
+if ($hasil){
+ echo "<script> alert('data berhasil Disimpan');location='".base_url()."transaksi/tambah_transaksi'</script>";
+}else{
+ echo  "<script> alert('data gagal Disimpan');location='".base_url()."transaksi/tambah_transaksi'</script>";
+}
+echo "<br/>";
+echo anchor('simpanan/tampil', 'Kembali');
+}
+else{
+ $this->load->view('tambahtransaksi');
+}
+
+}
 
 }
