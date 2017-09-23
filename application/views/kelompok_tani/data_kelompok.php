@@ -1,6 +1,6 @@
 
 <?php
-    include ('headerfull.php')
+    include ('header_ktani.php')
 ?>     
     
       <!--header end-->

@@ -39,7 +39,7 @@
                       </a>
                       <ul class="sub">
                         <li><a class="" href="<?php echo base_url(); ?>kelompok_tani/tambah_jual">INPUT PENJUALAN</a></li>
-                          <li><a class="" href="<?php echo base_url(); ?>kelompok_tani/data_panen">DATA PENJUALAN</a></li>
+                          <li><a class="" href="">DATA PENJUALAN</a></li>
                           
                       </ul>
                   </li>
