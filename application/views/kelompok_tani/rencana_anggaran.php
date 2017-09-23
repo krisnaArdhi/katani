@@ -3,7 +3,9 @@
 ?>     
 
       <!--sidebar start-->
-    
+    <?php
+    include ('sidebar.php')
+?>  
       <!--sidebar end-->
       
       <!--main content start-->

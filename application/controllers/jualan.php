@@ -13,8 +13,13 @@ class Jualan extends CI_Controller {
  }
  function index()
  {
- $data['toko'] = $this->M_jual->jual();
- $this->load->view('jual/home',$data);
+	 $data['toko'] = $this->M_jual->jual();
+	 $this->load->view('jual/home',$data);
  }
+public function detail($id_jual){
+      $this->load->model('M_jual');
+      $data['toko'] = $this->M_jual->show_detail($id_jual);
+      $this->load->view('jual/detail_jual', $data);
+    }
 
 }

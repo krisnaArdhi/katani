@@ -44,8 +44,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="general.html">pendaftaran</a></li>
-                          <li><a class="" href="buttons.html">data distributor</a></li>
+                          <li><a class="" href="<?php echo base_url(); ?>distributor/daftar">pendaftaran</a></li>
+                          <li><a class="" href="<?php echo base_url(); ?>distributor/daftar_barang">data distributor</a></li>
                       </ul>
                   </li>
               </ul>

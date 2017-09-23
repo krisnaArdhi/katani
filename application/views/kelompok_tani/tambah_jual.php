@@ -14,7 +14,7 @@
               <!--overview start-->
               <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header"><i class="fa fa-laptop"></i> RDATA HASIL PERTANIAN</h3>
+                    <h3 class="page-header"><i class="fa fa-laptop"></i> PENJUALAN</h3>
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
                     </ol>
@@ -33,65 +33,41 @@
                 <div class="col-lg-9 col-md-12">
                       <section class="panel">
                           <header class="panel-heading">
-                             INPUT DATA KOMODITAS
+                             INPUT BARANG DI JUAL
                           </header>
                           <div class="panel-body">
-                          <form class="form-horizontal " method="post" action="<?php echo base_url();?>distributor/simpan">
-
+                          <form class="form-horizontal " method="post" action="<?php echo base_url();?>kelompok_tani/simpan_jual" enctype="multipart/form-data">
 
                             <div class="form-group">
                                <label class="col-sm-2 control-label">NIK</label>
                                <div class="col-sm-10">
-                                   <input type="text" name="nama" class="form-control">
+                                   <input type="text" name="nik" class="form-control">
                                </div>
                            </div>
                            <div class="form-group">
-                               <label class="col-sm-2 control-label">NAMA</label>
+                               <label class="col-sm-2 control-label">JUMLAH BARANG</label>
                                <div class="col-sm-10">
-                                   <input type="text" name="alamat" class="form-control" disabled>
+                                   <input type="text" name="jumlah_barang" class="form-control" >
                              </div>
                            </div>
                            <div class="form-group">
-                               <label class="col-sm-2 control-label">KELOMPOK TANI</label>
+                               <label class="col-sm-2 control-label">HARGA</label>
                                <div class="col-sm-10">
-                                   <input type="text" name="alamat" class="form-control" disabled>
+                                   <input type="text" name="harga" class="form-control" >
                              </div>
                            </div>
                            <div class="form-group">
-                               <label class="col-sm-2 control-label">LUAS LAHAN</label>
+                               <label class="col-sm-2 control-label">GAMBAR</label>
                                <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
+                                <input type="file" class="form-control" id="gambar" name="gambar" value="">
+                              </div>
                            </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">KOMODITI</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">POLA TANAM</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">POLA PENGAIRAN</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" disabled>
-                               </div>
-                           </div>
-                           <div class="form-group">
-                               <label class="col-sm-2 control-label">JUMLAH PANEN</label>
-                               <div class="col-sm-10">
-                                   <input type="text" name="nama_toko" class="form-control" >
-                               </div>
-                           </div>
+                           
 
 
                                  <div class="form-group">
                                       <div class="col-sm-10">
-                                        <left><input type="submit" name="mysubmit" class="btn btn-danger" >
+                                        <left><input type="submit" name="simpan" class="btn btn-danger" >
                                         </left>
                                       </div>
                                   </div>

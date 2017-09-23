@@ -28,7 +28,19 @@
                       <ul class="sub">
                         <li><a class="" href="<?php echo base_url(); ?>kelompok_tani/komoditas">INPUT PANEN</a></li>
                           <li><a class="" href="<?php echo base_url(); ?>kelompok_tani/data_panen">DATA PANEN</a></li>
-                          <li><a class="" href="grids.html">JUAL</a></li>
+                          
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_desktop"></i>
+                          <span>PENJUALAN</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                        <li><a class="" href="<?php echo base_url(); ?>kelompok_tani/tambah_jual">INPUT PENJUALAN</a></li>
+                          <li><a class="" href="<?php echo base_url(); ?>kelompok_tani/data_panen">DATA PENJUALAN</a></li>
+                          
                       </ul>
                   </li>
               </ul>

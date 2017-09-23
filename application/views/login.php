@@ -33,7 +33,7 @@
 
     <div class="container">
 
-      <form class="login-form"  method="post" action="<?php echo base_url();?>login/cek_login">
+      <form class="login-form"  method="post" action="<?php echo base_url();?>login/cek_logina">
         <div class="login-wrap">
             <p class="login-img"><i class="icon_lock_alt"></i></p>
             <div class="input-group">

@@ -77,14 +77,7 @@
 				<!--iklan akhir -->
 
 				<div class="col-sm-9 padding-right">
-					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Features Items</h2>
-						<!--di foreach-->
-
-						<!-- akhir foreach -->
-
-					</div><!--features_items-->
-
+					
 					<div class="category-tab"><!--category-tab-->
 						<div class="col-sm-12">
 							<ul class="nav nav-tabs">
@@ -112,8 +105,8 @@
 											<h2><?php print $isi->nama?></h2>
 
 
-											<a href="<?php echo base_url(); ?>index.php/beli/detail_beli/<?php print $isi->nik?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>DETAIL</a>
-
+											<a href="<?php echo base_url(); ?>jualan/detail/<?php print $isi->nik?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>DETAIL</a>
+										
 										</div>
 
 										</div>

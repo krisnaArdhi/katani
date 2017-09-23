@@ -10,36 +10,55 @@ class Login extends CI_Controller{
 	}
 
 	function index(){
-		$this->load->view('login');
+		if ($this->session->userdata('akses') == 'admin') {
+                    redirect('login/admin');
+                }
+                else{
+                    redirect('login/login');
+                }
 	}
 
 
 
-  	public function cek_login() {
-  		$data = array('username' => $this->input->post('username', TRUE),
-  						'password' => md5($this->input->post('password', TRUE))
-  			);
-  		$this->load->model('model_user'); // load model_user
-  		$hasil = $this->model_user->cek_user($data);
-  		if ($hasil->num_rows() == 1) {
-  			foreach ($hasil->result() as $sess) {
-  				$sess_data['logged_in'] = 'Sudah Loggin';
-  				$sess_data['uid'] = $sess->uid;
-  				$sess_data['username'] = $sess->username;
-  				$sess_data['level'] = $sess->level;
-  				$this->session->set_userdata($sess_data);
-  			}
-  			if ($this->session->userdata('level')=='admin') {
-  				redirect('admin/c_admin');
-  			}
-  			elseif ($this->session->userdata('level')=='member') {
-  				redirect('member/c_member');
-  			}
-  		}
-  		else {
-  			echo "<script>alert('Gagal login: Cek username, password!');history.go(-1);</script>";
-  		}
-  	}
+  	public function cek_logina()
+    {
+
+        $data = array(
+        "admin",
+        $this->input->post('username'),
+        $this->input->post('password'));
+        $this->load->model('m_login');
+        $record = $this->m_login->ceka($data);
+        
+        if($record==0){
+            $this->login();
+        }else{
+            $this->session->set_userdata(array('username'=>$data[1]));
+            $this->session->set_userdata(array('group'=>$data[0]));
+            redirect('admin');
+        }
+    }
+
+public function login(){
+        
+        $this->load->view('login');
+    }
+    function admin()
+    {
+        if ($this->session->userdata('logged_in')) 
+        {
+            if ($this->session->userdata('akses') == 'admin')
+            {
+                
+                $this->load->view('upt/daftar_mantri_tani');
+            }
+            else
+            {
+                redirect('login/login');
+            }
+            
+        }
+      }
 
 	function logout(){
 		$this->session->sess_destroy();

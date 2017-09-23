@@ -2,6 +2,6 @@
 class upt_pertanian extends CI_Controller {
 	public function index()
 	{
-		$this->load->view('upt/mantri_tani');
+		$this->load->view('upt/daftar_mantri_tani');
 	}
 }
