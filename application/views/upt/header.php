@@ -284,23 +284,9 @@
                             <li class="eborder-top">
                                 <a href="#"><i class="icon_profile"></i> My Profile</a>
                             </li>
+                            
                             <li>
-                                <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon_chat_alt"></i> Chats</a>
-                            </li>
-                            <li>
-                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
-                            </li>
-                            <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
-                            </li>
-                            <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                                <a href="<?php echo base_url(); ?>masuk/logout"><i class="icon_key_alt"></i> Log Out</a>
                             </li>
                         </ul>
                     </li>
