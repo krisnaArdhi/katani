@@ -1,6 +1,6 @@
 <?php
 
-class Login extends CI_Controller{
+class Masuk extends CI_Controller{
 
 	function __construct()
   {
@@ -11,10 +11,10 @@ class Login extends CI_Controller{
 
 	function index(){
 		if ($this->session->userdata('akses') == 'admin') {
-                    redirect('login/admin');
+                    redirect('masuk/admin');
                 }
                 else{
-                    redirect('login/login');
+                    redirect('masuk/login');
                 }
 	}
 
@@ -35,7 +35,7 @@ class Login extends CI_Controller{
         }else{
             $this->session->set_userdata(array('username'=>$data[1]));
             $this->session->set_userdata(array('group'=>$data[0]));
-            redirect('admin');
+            redirect('login/admin');
         }
     }
 

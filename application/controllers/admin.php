@@ -13,6 +13,6 @@ function __construct(){
  }
 	public function index()
 	{
-		$this->load->view('admin');
+		$this->load->view('upt/daftar_mantri_tani');
 	}
 }
