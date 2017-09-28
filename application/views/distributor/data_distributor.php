@@ -11,9 +11,9 @@
       <!--header end-->
 
       <!--sidebar start-->
-      <?php
-      include ('sidebar.php')
-    ?>     
+	  	<?php
+	    include ('sidebar_upt.php')
+		?>     
       <!--sidebar end-->
       
       <!--main content start-->
@@ -44,9 +44,10 @@
                           <table class="table table-striped">
                               <thead>
                               <tr>
-                                  <th>Id Kelompok</th>
-                                  <th>Kelompok Tani</th>
-                                  <th>wilayah</th>
+                                  <th>Id Distributor</th>
+                                  <th>Nama Pemilik</th>
+                                  <th>Nama Toko</th>
+                                  <th>Alamat Toko</th>
 
                               </tr>
                               </thead>
@@ -63,8 +64,9 @@
                               <tbody>
                               <tr>
                                   <td><?php print $isi->id_regis_tani?> </td>
-                                  <td><?php print $isi->nama_kelompok?> </td>
-                                  <td><?php print $isi->nama_wilayah?></td>
+                                  <td><?php print $isi->nama_pemilik?> </td>
+                                  <td><?php print $isi->nama_toko?></td>
+                                  <td><?php print $isi->alamat_toko?></td>
                               </tr>
                               
                               </tbody>

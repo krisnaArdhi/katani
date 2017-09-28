@@ -7,19 +7,26 @@ class M_distributor extends CI_Model
  {
   parent::__construct();
  }
+
 public function tampil_barang()
  {
 	$query = $this->db->get('t_stok_distributor');
 return $query->result(); 
 }
+
 function daftar($data1)
     {
         $hasil=$this->db->insert('t_distributor', $data1);     
         return $hasil;
     }
 
+    public function tampil_distributor()
+ {
+ 	
+ 	$query = $this->db->get('distributor');
+	return $query->result();
 
-
+}
 
   public function tampil_pg2($id_anggota,$offset)
  {

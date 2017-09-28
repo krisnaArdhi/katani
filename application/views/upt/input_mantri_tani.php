@@ -1,9 +1,11 @@
-<?php
-    include ('headerform.php')
-?>
+    <?php
+        include ('header_upt.php')
+    ?>
 
       <!--sidebar start-->
-
+      <?php
+    include ('sidebar.php')
+?>
       <!--sidebar end-->
 
       <!--main content start-->
