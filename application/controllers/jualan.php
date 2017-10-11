@@ -16,10 +16,19 @@ class Jualan extends CI_Controller {
 	 $data['toko'] = $this->M_jual->jual();
 	 $this->load->view('jual/home',$data);
  }
+ function login()
+ {
+	$this->load->view('jual/login_jual');
+ }
 public function detail($id_jual){
       $this->load->model('M_jual');
       $data['toko'] = $this->M_jual->show_detail($id_jual);
       $this->load->view('jual/detail_jual', $data);
     }
 
+		function kirim()
+	  {
+	 	 //$data['toko'] = $this->M_jual->jual();
+	 	 $this->load->view('jual/kirim');
+	  }
 }

@@ -3,10 +3,10 @@
 
   <head>
 
-   
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
@@ -14,14 +14,14 @@
 
     <title>Creative - Bootstrap Admin Template</title>
 
-    <!-- Bootstrap CSS -->    
+    <!-- Bootstrap CSS -->
     <link href="<?php echo base_url(); ?>bahan/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
     <link href="<?php echo base_url(); ?>bahan/css/bootstrap-theme.css" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
     <link href="<?php echo base_url(); ?>bahan/css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="<?php echo base_url(); ?>bahan/css/font-awesome.min.css" rel="stylesheet" />    
+    <link href="<?php echo base_url(); ?>bahan/css/font-awesome.min.css" rel="stylesheet" />
     <!-- full calendar css-->
     <link href="<?php echo base_url(); ?>bahan/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
 	<link href="<?php echo base_url(); ?>bahan/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
@@ -35,7 +35,7 @@
 	<link href="<?php echo base_url(); ?>bahan/css/widgets.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>bahan/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>bahan/css/style-responsive.css" rel="stylesheet" />
-	<link href="<?php echo base_url(); ?>bahan/css/xcharts.min.css" rel=" stylesheet">	
+	<link href="<?php echo base_url(); ?>bahan/css/xcharts.min.css" rel=" stylesheet">
 	<link href="<?php echo base_url(); ?>bahan/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
@@ -47,34 +47,34 @@
 <body>
   <!-- container section start -->
   <section id="container" class="">
-     
-      
+
+
       <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
 
             <!--logo start-->
-            <a href="index.html" class="logo">SI- <span class="lite">TANI</span></a>
+            <a href="<?php echo base_url(); ?>upt_pertanian/" class="logo">SI- <span class="lite">TANI</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
                 <!--  search form start -->
-                <ul class="nav top-menu">                    
+                <ul class="nav top-menu">
                     <li>
                         <form class="navbar-form">
                             <input class="form-control" placeholder="Search" type="text">
                         </form>
-                    </li>                    
+                    </li>
                 </ul>
-                <!--  search form end -->                
+                <!--  search form end -->
             </div>
 
-            <div class="top-nav notification-row">                
+            <div class="top-nav notification-row">
                 <!-- notificatoin dropdown start-->
                 <ul class="nav pull-right top-menu">
-                    
-                    
+
+
                     <!-- user login dropdown start-->
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -89,7 +89,7 @@
                             <li class="eborder-top">
                                 <a href="#"><i class="icon_profile"></i> My Profile</a>
                             </li>
-                            
+
                             <li>
                                 <a href="<?php echo base_url(); ?>masuk/logout"><i class="icon_key_alt"></i> Log Out</a>
                             </li>
@@ -99,4 +99,4 @@
                 </ul>
                 <!-- notificatoin dropdown end-->
             </div>
-      </header>  
+      </header>

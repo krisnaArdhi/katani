@@ -11,14 +11,14 @@
 
     <title>Creative - Bootstrap Admin Template</title>
 
-    <!-- Bootstrap CSS -->    
+    <!-- Bootstrap CSS -->
     <link href="<?php echo base_url(); ?>bahan/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
     <link href="<?php echo base_url(); ?>bahan/css/bootstrap-theme.css" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
     <link href="<?php echo base_url(); ?>bahan/css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="<?php echo base_url(); ?>bahan/css/font-awesome.min.css" rel="stylesheet" />    
+    <link href="<?php echo base_url(); ?>bahan/css/font-awesome.min.css" rel="stylesheet" />
     <!-- full calendar css-->
     <link href="<?php echo base_url(); ?>bahan/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
 	<link href="<?php echo base_url(); ?>bahan/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
@@ -32,7 +32,7 @@
 	<link href="<?php echo base_url(); ?>bahan/css/widgets.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>bahan/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>bahan/css/style-responsive.css" rel="stylesheet" />
-	<link href="<?php echo base_url(); ?>bahan/css/xcharts.min.css" rel=" stylesheet">	
+	<link href="<?php echo base_url(); ?>bahan/css/xcharts.min.css" rel=" stylesheet">
 	<link href="<?php echo base_url(); ?>bahan/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
@@ -45,8 +45,8 @@
   <body>
   <!-- container section start -->
   <section id="container" class="">
-     
-      
+
+
       <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
@@ -58,20 +58,20 @@
 
             <div class="nav search-row" id="top_menu">
                 <!--  search form start -->
-                <ul class="nav top-menu">                    
+                <ul class="nav top-menu">
                     <li>
                         <form class="navbar-form">
                             <input class="form-control" placeholder="Search" type="text">
                         </form>
-                    </li>                    
+                    </li>
                 </ul>
-                <!--  search form end -->                
+                <!--  search form end -->
             </div>
 
-            <div class="top-nav notification-row">                
+            <div class="top-nav notification-row">
                 <!-- notificatoin dropdown start-->
                 <ul class="nav pull-right top-menu">
-                    
+
                     <!-- task notificatoin start -->
                     <li id="task_notificatoin_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -236,32 +236,32 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="label label-primary"><i class="icon_profile"></i></span> 
+                                    <span class="label label-primary"><i class="icon_profile"></i></span>
                                     Friend Request
                                     <span class="small italic pull-right">5 mins</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="label label-warning"><i class="icon_pin"></i></span>  
+                                    <span class="label label-warning"><i class="icon_pin"></i></span>
                                     John location.
                                     <span class="small italic pull-right">50 mins</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="label label-danger"><i class="icon_book_alt"></i></span> 
+                                    <span class="label label-danger"><i class="icon_book_alt"></i></span>
                                     Project 3 Completed.
                                     <span class="small italic pull-right">1 hr</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="label label-success"><i class="icon_like"></i></span> 
+                                    <span class="label label-success"><i class="icon_like"></i></span>
                                     Mick appreciated your work.
                                     <span class="small italic pull-right"> Today</span>
                                 </a>
-                            </li>                            
+                            </li>
                             <li>
                                 <a href="#">See all notifications</a>
                             </li>
@@ -306,87 +306,47 @@
                 </ul>
                 <!-- notificatoin dropdown end-->
             </div>
-      </header>      
+      </header>
       <!--header end-->
 
       <!--sidebar start-->
-      <aside>
-          <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
-              <ul class="sidebar-menu">                
-                  <li class="active">
-                      <a class="" href="index.html">
-                          <i class="icon_house_alt"></i>
-                          <span>Dashboard</span>
-                      </a>
-                  </li>
-				  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_document_alt"></i>
-                          <span>Forms</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="form_component.html">Form Elements</a></li>                          
-                          <li><a class="" href="form_validation.html">Form Validation</a></li>
-                      </ul>
-                  </li>       
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_desktop"></i>
-                          <span>UI Fitures</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="general.html">Elements</a></li>
-                          <li><a class="" href="buttons.html">Buttons</a></li>
-                          <li><a class="" href="grids.html">Grids</a></li>
-                      </ul>
-                  </li>
-                  
-                  
-                             
-                  
-                  
-                 
-                  
-              </ul>
-              <!-- sidebar menu end-->
-          </div>
-      </aside>
+      <?php
+      				$this->load->view('Distributor/sidebar_distributor');
+      				?>
+
       <!--sidebar end-->
-      
+
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">            
+          <section class="wrapper">
               <!--overview start-->
 			  <div class="row">
 				<div class="col-lg-12">
 					<h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-						<li><i class="fa fa-laptop"></i>Dashboard</li>						  	
+						<li><i class="fa fa-laptop"></i>Dashboard</li>
 					</ol>
 				</div>
 			</div>
-              
 
-		            
-		  
+
+
+
 		  <!-- Today status end -->
-			
-              
-				
+
+
+
 			<div class="row">
-               	
-				<div class="col-lg-9 col-md-12">	
+
+				<div class="col-lg-9 col-md-12">
                       <section class="panel">
                           <header class="panel-heading">
                              DAFTAR BARANG
                           </header>
                           <div class="panel-body">
                           <form class="form-horizontal " method="post" action="<?php echo base_url();?>distributor/simpan">
-                                    
+
 
                                    <div class="form-group">
                                       <label class="col-sm-2 control-label">ID DISTRIBUTOR</label>
@@ -405,48 +365,48 @@
                                       <div class="col-sm-10">
                                           <input type="text" name="nama_barang" class="form-control">
                                       </div>
-                                  </div>  
-                                   
+                                  </div>
+
                                   <div class="form-group">
                                       <label class="col-sm-2 control-label">HARGA</label>
                                       <div class="col-sm-10">
                                           <input type="text" name="harga" class="form-control">
                                     </div>
                                   </div>
-                                
+
 								<div class="form-group">
                                       <label class="col-sm-2 control-label">STOK</label>
                                       <div class="col-sm-10">
                                           <input type="text" name="stok" class="form-control">
                                     </div>
                                   </div>
-								  
+
                                  <div class="form-group">
                                       <div class="col-sm-10">
                                         <left><input type="submit" name="mysubmit" class="btn btn-danger" >
                                         </left>
                                       </div>
-                                  </div>  
+                                  </div>
                               </form>
                           </div>
                       </section>
 
 				</div><!--/col-->
-				
+
               </div>
 
-                    
-                   
+
+
                 <!-- statics end -->
-              
-            
-				
+
+
+
 
               <!-- project team & activity start -->
           <div class="row">
 
               </div><br><br>
-          </div> 
+          </div>
               <!-- project team & activity end -->
 
           </section>
@@ -479,7 +439,7 @@
     <!-- custom select -->
     <script src="<?php echo base_url(); ?>bahan/js/jquery.customSelect.min.js" ></script>
 	<script src="<?php echo base_url(); ?>bahan/assets/chart-master/Chart.js"></script>
-   
+
     <!--custome script for all page-->
     <script src="<?php echo base_url(); ?>bahan/js/scripts.js"></script>
     <!-- custom script for this page-->
@@ -490,9 +450,9 @@
 	<script src="<?php echo base_url(); ?>bahan/js/xcharts.min.js"></script>
 	<script src="<?php echo base_url(); ?>bahan/js/jquery.autosize.min.js"></script>
 	<script src="<?php echo base_url(); ?>bahan/js/jquery.placeholder.min.js"></script>
-	<script src="<?php echo base_url(); ?>bahan/js/gdp-data.js"></script>	
+	<script src="<?php echo base_url(); ?>bahan/js/gdp-data.js"></script>
 	<script src="<?php echo base_url(); ?>bahan/js/morris.min.js"></script>
-	<script src="<?php echo base_url(); ?>bahan/js/sparklines.js"></script>	
+	<script src="<?php echo base_url(); ?>bahan/js/sparklines.js"></script>
 	<script src="<?php echo base_url(); ?>bahan/js/charts.js"></script>
 	<script src="<?php echo base_url(); ?>bahan/js/jquery.slimscroll.min.js"></script>
   <script>
@@ -500,7 +460,7 @@
       //knob
       $(function() {
         $(".knob").knob({
-          'draw' : function () { 
+          'draw' : function () {
             $(this.i).val(this.cv + '%')
           }
         })
@@ -522,7 +482,7 @@
       $(function(){
           $('select.styled').customSelect();
       });
-	  
+
 	  /* ---------- Map ---------- */
 	$(function(){
 	  $('#map').vectorMap({

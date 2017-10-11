@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>bahan/img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Creative - Bootstrap Admin Template</title>
+    <title>Charts | Creative - Bootstrap 3 Responsive Admin Template</title>
 
     <!-- Bootstrap CSS -->
     <link href="<?php echo base_url(); ?>bahan/css/bootstrap.min.css" rel="stylesheet">
@@ -19,21 +18,10 @@
     <!-- font icon -->
     <link href="<?php echo base_url(); ?>bahan/css/elegant-icons-style.css" rel="stylesheet" />
     <link href="<?php echo base_url(); ?>bahan/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- full calendar css-->
-    <link href="<?php echo base_url(); ?>bahan/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
-	<link href="<?php echo base_url(); ?>bahan/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
-    <!-- easy pie chart-->
-    <link href="<?php echo base_url(); ?>bahan/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>bahan/css/owl.carousel.css" type="text/css">
-	<link href="<?php echo base_url(); ?>bahan/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
     <!-- Custom styles -->
-	<link rel="stylesheet" href="<?php echo base_url(); ?>bahan/css/fullcalendar.css">
-	<link href="<?php echo base_url(); ?>bahan/css/widgets.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>bahan/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>bahan/css/style-responsive.css" rel="stylesheet" />
-	<link href="<?php echo base_url(); ?>bahan/css/xcharts.min.css" rel=" stylesheet">
-	<link href="<?php echo base_url(); ?>bahan/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
       <script src="<?php echo base_url(); ?>bahan/js/html5shiv.js"></script>
@@ -41,18 +29,19 @@
       <script src="<?php echo base_url(); ?>bahan/js/lte-ie7.js"></script>
     <![endif]-->
   </head>
-<body>
+
+  <body>
   <!-- container section start -->
   <section id="container" class="">
+      <!--header start-->
 
-
-      <header class="header dark-bg">
+      <<header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
 
             <!--logo start-->
-            <a href="<?php echo base_url(); ?>kelompok_tani" class="logo">SI- <span class="lite">TANI</span></a>
+            <a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
@@ -75,12 +64,12 @@
                     <li id="task_notificatoin_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="icon-task-l"></i>
-                            <span class="badge bg-important">6</span>
+                            <span class="badge bg-important">5</span>
                         </a>
                         <ul class="dropdown-menu extended tasks-bar">
                             <div class="notify-arrow notify-arrow-blue"></div>
                             <li>
-                                <p class="blue">You have 6 pending letter</p>
+                                <p class="blue">You have 5 pending tasks</p>
                             </li>
                             <li>
                                 <a href="#">
@@ -169,7 +158,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>bahan/<?php echo base_url(); ?>bahan/img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -181,7 +170,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>bahan/<?php echo base_url(); ?>bahan/img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -193,7 +182,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>bahan/<?php echo base_url(); ?>bahan/img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -205,7 +194,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>bahan/<?php echo base_url(); ?>bahan/img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -271,7 +260,7 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="<?php echo base_url(); ?>bahan/img/avatar1_small.jpg">
+                                <img alt="" src="img/avatar1_small.jpg">
                             </span>
                             <span class="username">Jenifer Smith</span>
                             <b class="caret"></b>
@@ -306,3 +295,207 @@
                 <!-- notificatoin dropdown end-->
             </div>
       </header>
+      <!--header end-->
+
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">
+                  <li class="active">
+                      <a class="" href="index.html">
+                          <i class="icon_house_alt"></i>
+                          <span>Dashboard</span>
+                      </a>
+                  </li>
+				  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_document_alt"></i>
+                          <span>Forms</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="form_component.html">Form Elements</a></li>
+                          <li><a class="" href="form_validation.html">Form Validation</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_desktop"></i>
+                          <span>UI Fitures</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="general.html">Components</a></li>
+                          <li><a class="" href="buttons.html">Buttons</a></li>
+                          <li><a class="" href="grids.html">Grids</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="" href="widgets.html">
+                          <i class="icon_genius"></i>
+                          <span>Widgets</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="chart-chartjs.html">
+                          <i class="icon_piechart"></i>
+                          <span>Charts</span>
+
+                      </a>
+
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_table"></i>
+                          <span>Tables</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="basic_table.html">Basic Table</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_documents_alt"></i>
+                          <span>Pages</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="profile.html">Profile</a></li>
+                          <li><a class="" href="login.html"><span>Login Page</span></a></li>
+                          <li><a class="" href="blank.html">Blank Page</a></li>
+                          <li><a class="" href="404.html">404 Error</a></li>
+                      </ul>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+
+      <!--main content start-->
+      <section id="main-content">
+        <section class="wrapper">
+		<div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="icon_piechart"></i> Chart</h3>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+						<li><i class="icon_piechart"></i>Chart</li>
+
+					</ol>
+				</div>
+			</div>
+            <div class="row">
+              <!-- chart morris start -->
+              <div class="col-lg-12">
+                  <section class="panel">
+                      <header class="panel-heading">
+                          <h3>General Chart</Char>
+                      </header>
+                      <div class="panel-body">
+                        <div class="tab-pane" id="chartjs">
+                      <div class="row">
+                          <!-- Line -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Line
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="line" height="300" width="450"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                          <!-- Bar -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Bar
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="bar" height="300" width="500"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <!-- Radar -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Radar
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="radar" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                          <!-- Polar Area -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Polar Area
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="polarArea" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                      <div class="row">
+
+                          <!-- Pie -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Pie
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="pie" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                          <!-- Doughnut -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Doughnut
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="doughnut" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                  </div>
+                      </div>
+                      </div>
+                    </section>
+              </div>
+              <!-- chart morris start -->
+            </div>
+      </section>
+      <!--main content end-->
+    </section>
+    <!-- container section end -->
+    <!-- javascripts -->
+    <script src="<?php echo base_url(); ?>bahan/js/jquery.js"></script>
+    <script src="<?php echo base_url(); ?>bahan/js/jquery-1.8.3.min.js"></script>
+    <script src="<?php echo base_url(); ?>bahan/js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="<?php echo base_url(); ?>bahan/js/jquery.scrollTo.min.js"></script>
+    <script src="<?php echo base_url(); ?>bahan/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- chartjs -->
+    <script src="assets/chart-master/Chart.js"></script>
+    <!-- custom chart script for this page only-->
+    <script src="<?php echo base_url(); ?>bahan/js/chartjs-custom.js"></script>
+    <!--custome script for all page-->
+    <script src="<?php echo base_url(); ?>bahan/js/scripts.js"></script>
+
+  </body>
+</html>

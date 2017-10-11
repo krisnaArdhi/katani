@@ -65,7 +65,7 @@
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
 
-								<li><a href="<?php echo base_url(); ?>jualan/login"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="<?php echo base_url(); ?>login"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>

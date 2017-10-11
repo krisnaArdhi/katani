@@ -24,10 +24,15 @@ class Distributor extends CI_Controller {
 				 }
 		$this->load->view('upt/daftar_mantri_tani');
 	}
+	public function tambah_barang ()
+	{
+
+		$this->load->view('distributor/daftar_barang');
+	}
 	public function lelang ()
 	{
 
-		$this->load->view('upt/daftar_mantri_tani');
+		$this->load->view('content');
 	}
 
 	public function daftar ()
